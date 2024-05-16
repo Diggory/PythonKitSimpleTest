@@ -1,6 +1,5 @@
 //	A Simple test of PythonKit
 
-
 import PythonKit
 let os = Python.import("os")
 let sys = Python.import("sys")
@@ -8,6 +7,9 @@ let sys = Python.import("sys")
 //	Python version that PythonKit is using
 print("Python \(sys.version_info.major).\(sys.version_info.minor)")
 print("Python Version: \(sys.version)")
+
+//	Path to venv
+// sys.path.append(os.path.abspath("/Users/diggory/python/venv/lib/python3.12/site-packages"))
 
 //	Paths where Python looks for modules
 print("Python PATH")
